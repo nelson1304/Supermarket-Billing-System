@@ -36,6 +36,7 @@ def main1():
                 print("2.add product")
                 print("3.update price")
                 print("4.update quantity")
+                print("5.quit")
                 a3 = int(input('enter your choice:>'))
                 if (a3 == 1):
                     c.product_search()
@@ -49,19 +50,23 @@ def main1():
                 if (a3 == 4):
                     c.update_quantity()
                     continue
+                if(a3== 5):
+                    break
                 else:
-                    print("wrong choice")
+                    
                     continue
         if (a2 == 3):
             while(1):
                 print("1.buy product")
-
+                print('2.quit')
                 a4 = int(input("enter your choice:>"))
                 if (a4 == 1):
                     d.buy_product()
                     continue
+                if(a4==2):
+                    break
                 else:
-                    print("wrong choice")
+          
                     continue
         if(a2==4):
             quit()
